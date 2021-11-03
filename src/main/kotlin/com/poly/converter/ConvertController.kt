@@ -15,8 +15,13 @@ class ConvertController(
         return "Hello, my friend!"
     }
 
-    @PostMapping("converter/json")
+    @PostMapping("converter/toJson")
     fun convertXMLToJSON(@RequestParam("xml") xml: MultipartFile): String {
-        return convertService.convertXMLToJSON(xml)
+        return convertService.convertXMLToJSON(xml).toString()
+    }
+
+    @PostMapping("converter/toYaml")
+    fun convertJSONToYAML(@RequestParam("xml") xml: MultipartFile): String {
+        return convertService.convertXMLToYAML(xml)
     }
 }
