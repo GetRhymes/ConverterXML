@@ -7,6 +7,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import org.json.XML
 import org.springframework.stereotype.Service
 import org.springframework.web.multipart.MultipartFile
+import java.io.File
 
 @Service
 class ConvertService {
@@ -19,8 +20,13 @@ class ConvertService {
         return convertJSONToYAML(convertXMLToJSON(xml))
     }
 
+    fun describe(): String {
+        return File("src/main/resources/describe.txt").readText()
+    }
+
     private fun convertJSONToYAML(json: String): String {
         val jsonNodeTree: JsonNode = ObjectMapper().readTree(json)
         return YAMLMapper().writeValueAsString(jsonNodeTree)
     }
+
 }
