@@ -11,8 +11,8 @@ class ConvertController(
     private val convertService: ConvertService
 ) {
     @RequestMapping("/")
-    fun hello(): String {
-        return "Hello, my friend!"
+    fun describe(): String {
+        return convertService.describe()
     }
 
     @PostMapping("converter/toJson")
