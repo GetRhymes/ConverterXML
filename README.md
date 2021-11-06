@@ -14,7 +14,7 @@
              **curl -F "xml=@/Users/path/to/file.xml" http://host:port/converter/toJson**
         2.2) Для конвертация XML в YAML
             Отправьте Post запрос с помощью curl или других инструментов следующего вида:
-             **curl -F "xml=@/Users/path/to/file.xml" http://host:port/converter/toJson**
+             **curl -F "xml=@/Users/path/to/file.xml" http://host:port/converter/toYaml**
     3) Получить результат на экране
 
 ## Docker
