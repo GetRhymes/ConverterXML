@@ -16,3 +16,8 @@
             Отправьте Post запрос с помощью curl или других инструментов следующего вида:
              **curl -F "xml=@/Users/path/to/file.xml" http://host:port/converter/toJson**
     3) Получить результат на экране
+
+## Docker
+    docker build -t converter .
+
+    docker run -it -p8080:8080 converter
