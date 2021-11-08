@@ -25,7 +25,9 @@ class ConvertServiceTest {
 
     @Test
     fun convertXMLToJSONTest() {
-        val textFromJSONFile = File("src/test/resources/convertXMLToJSONResult.json").readText()
+        val textFromJSONFile = File("src/test/resources/convertXMLToJSONResult.json")
+            .readText()
+            .replace("\r", "")
         val expected = JSONObject(textFromJSONFile).toString()
         val actual = convertService.convertXMLToJSON(xml)
         assertEquals(expected, actual)
@@ -33,7 +35,9 @@ class ConvertServiceTest {
 
     @Test
     fun convertXMLToYAMLTest() {
-        val expected = File("src/test/resources/convertXMLToYAML.yaml").readText()
+        val expected = File("src/test/resources/convertXMLToYAML.yaml")
+            .readText()
+            .replace("\r", "")
         val actual = convertService.convertXMLToYAML(xml)
         assertEquals(expected, actual)
     }
