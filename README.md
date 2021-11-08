@@ -18,6 +18,7 @@
     3) Получить результат на экране
 
 ## Docker
-    docker build -t converter .
-
-    docker run -it -p8080:8080 converter
+    Собрать образ:
+        docker build -t converter .
+    Запустить контейнер: 
+        docker run -it -p8080:8080 converter
