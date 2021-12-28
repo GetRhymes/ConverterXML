@@ -1,3 +1,11 @@
+## CI
+
+CI
+для `main`:  [![Build Status](https://app.travis-ci.com/GetRhymes/ConverterXML.svg?branch=master)](https://app.travis-ci.com/GetRhymes/ConverterXML)
+
+CI
+для `develop`:  [![Build Status](https://app.travis-ci.com/GetRhymes/ConverterXML.svg?branch=master)](https://app.travis-ci.com/GetRhymes/ConverterXML)
+
 ## Описание:
 
     С помощью данного сервиса можно конвертировать:
