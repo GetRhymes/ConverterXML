@@ -1,3 +1,14 @@
+## CI
+<table>
+  <tr><td>master</td><td>develop</td></tr>
+  <tr>
+    <td><a href="https://github.com/GetRhymes/ConverterXML/actions?query=branch%3Amaster">
+      <img src="https://github.com/GetRhymes/ConverterXML/actions/workflows/converter.yml/badge.svg?branch=master" alt="test for master"></a></td>
+    <td><a href="https://github.com/GetRhymes/ConverterXML/actions?query=branch%3Adevelop">
+      <img src="https://github.com/GetRhymes/ConverterXML/actions/workflows/converter.yml/badge.svg?branch=develop" alt="test for dev"></a></td>
+  </tr>
+</table>
+
 ## Описание:
 
     С помощью данного сервиса можно конвертировать:
